@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+    --verypale: hsl(224, 100%, 94%);
+    --saturatedblue: hsl(223, 68%, 96%);
+
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--verypale);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+ 
+}
+.bg{
+    position: absolute;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    top: 0;
+
+}
+.d-block{
+    display: block;
+}
+
+.card{
+    background-color: var(--Verypaleblue);
+    border-radius: 22px;
+    margin-top: 30px;
+    /* position: relative; */
+    z-index: 22222;
+
+}
+
+.card-img{
+    margin: 0;
+}
+
+.card-image{
+    border-top-left-radius:22px;
+    border-top-right-radius:22px;
+    overflow: hidden;
+    width: 100%;
+    height: 190px;
+
+}
+
+.card h2{
+    text-align: center;
+    color: var(--Darkblue);
+}
+
+.card p{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 23px;
+    color: var(--Desaturatedblue);
+}
+
+.card a{
+    color: var(--Brightblue);
+    position: relative;
+    top: 30px;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--saturatedblue);
+    margin: 1.5rem;
+    border-radius: 9px;
+    padding: 0px 25px;
+}
+
+
+.price{
+    font-size: 14px;
+    color: var(--Desaturatedblue);
+    font-weight: 100;
+}
+
+.music{
+    position: relative;
+    top: 15px;
+}
+
+
+.plan{
+    position: relative;
+    right: 35px;
+}
+
+
+.payment-btn{
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+}
+.payment{
+    background-color: var(--Brightblue);
+    color: var(--Verypaleblue);
+    font-weight: 600;
+    border: none;
+    padding: 14px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow:1px 12px 14px  hsl(224, 43%, 82%);
+
+
+
+}
+
+.order{
+    border: none;
+    background: none;
+    margin-top: 20px;
+    font-weight: 600;
+    color: var(--Desaturatedblue);
+
+}
+
+@media(max-width:600px){
+    
+    body{
+        margin:1rem;
+    }
+
+    .plan{
+        position: relative;
+        right: 5px;
+    }
+
+    .actions{
+        padding: 0px 12px;
+        gap: 20px;
+    }
+
+
+    .payment{
+        font-size: 16px;
+    }
+
+
+}
